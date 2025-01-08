@@ -1,5 +1,5 @@
 import React from "react";
-import SummaryCard from "../components/card/summaryCard";
+import SummaryCard from "../components/card/SummaryCard";
 
 const Checkout = () => {
   return (
