@@ -62,7 +62,7 @@ const Register = () => {
   //   console.log(form);
   //   // Send to backend
   //   try {
-  //     const res = await axios.post("https://ecom2024-api-seven.vercel.app/api/register", form);
+  //     const res = await axios.post("https://ecom2024-api-pi.vercel.app/api/register", form);
   //     console.log(res);
   //     toast.success(res.data);
   //   } catch (err) {
@@ -81,7 +81,7 @@ const Register = () => {
     // Send to backend
     try {
       const res = await axios.post(
-        "https://ecom2024-api-seven.vercel.app/api/register",
+        "https://ecom2024-api-pi.vercel.app/api/register",
         data
       );
       console.log(res);

@@ -52,7 +52,7 @@ const ecomStore = (set, get) => ({
     // if request success , the response will be in res.json({ payload, token });
     // payload = { id: user.id, email: user.email, role: user.role };
     const res = await axios.post(
-      "https://ecom2024-api-seven.vercel.app/api/login",
+      "https://ecom2024-api-pi.vercel.app/api/login",
       form
     );
     set({

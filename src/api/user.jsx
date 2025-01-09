@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const createUserCart = async (token, cart) => {
   return await axios.post(
-    "https://ecom2024-api-seven.vercel.app/api/user/cart",
+    "https://ecom2024-api-pi.vercel.app/api/user/cart",
     cart,
     {
       headers: {
@@ -13,19 +13,16 @@ export const createUserCart = async (token, cart) => {
 };
 
 export const listUserCart = async (token) => {
-  return await axios.get(
-    "https://ecom2024-api-seven.vercel.app/api/user/cart",
-    {
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-    }
-  );
+  return await axios.get("https://ecom2024-api-pi.vercel.app/api/user/cart", {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
 };
 
 export const saveAddress = async (token, address) => {
   return await axios.post(
-    "https://ecom2024-api-seven.vercel.app/api/user/address",
+    "https://ecom2024-api-pi.vercel.app/api/user/address",
     { address },
     {
       headers: {
@@ -37,7 +34,7 @@ export const saveAddress = async (token, address) => {
 
 export const saveOrder = async (token, payload) => {
   return await axios.post(
-    "https://ecom2024-api-seven.vercel.app/api/user/order",
+    "https://ecom2024-api-pi.vercel.app/api/user/order",
     payload,
     {
       headers: {
@@ -48,12 +45,9 @@ export const saveOrder = async (token, payload) => {
 };
 
 export const getOrders = async (token) => {
-  return await axios.get(
-    "https://ecom2024-api-seven.vercel.app/api/user/order",
-    {
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-    }
-  );
+  return await axios.get("https://ecom2024-api-pi.vercel.app/api/user/order", {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
 };

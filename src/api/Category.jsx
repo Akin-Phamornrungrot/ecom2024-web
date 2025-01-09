@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const createCategory = async (token, form) => {
   return await axios.post(
-    "https://ecom2024-api-seven.vercel.app/api/category",
+    "https://ecom2024-api-pi.vercel.app/api/category",
     form,
     {
       headers: {
@@ -13,12 +13,12 @@ export const createCategory = async (token, form) => {
 };
 
 export const listCategory = async () => {
-  return await axios.get("https://ecom2024-api-seven.vercel.app/api/category");
+  return await axios.get("https://ecom2024-api-pi.vercel.app/api/category");
 };
 
 export const removeCategory = async (token, id) => {
   return await axios.delete(
-    "https://ecom2024-api-seven.vercel.app/api/category/" + id,
+    "https://ecom2024-api-pi.vercel.app/api/category/" + id,
     {
       headers: {
         Authorization: `Bearer ${token}`,
